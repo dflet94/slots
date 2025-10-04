@@ -1,11 +1,16 @@
 body {
+  background-image: url('https://copilot.microsoft.com/th/id/BCO.bb55bde0-634c-4d1d-ad34-fd223b15ac2e.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Segoe UI', sans-serif;
-  background: #222;
   color: #fff;
   text-align: center;
   margin: 0;
   padding: 0;
 }
+
 
 .container {
   padding: 20px;
