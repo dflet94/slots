@@ -11,6 +11,27 @@ body {
   padding: 20px;
 }
 
+.bubble-title {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(90deg, purple, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  animation: wiggle 1s infinite ease-in-out;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-2deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
 .slot-machine {
   position: relative;
   display: inline-block;
