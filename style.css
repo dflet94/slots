@@ -1,6 +1,6 @@
 body {
   background-image: url('assets/arabian-city.png');
-  background-size: 100% 100%;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
