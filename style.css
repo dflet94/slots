@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.slot-machine {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  background: #333;
+  padding: 10px;
+  border: 4px solid #888;
+  border-radius: 10px;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  border-radius: 5px;
+}
+
+.handle {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  width: 20px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.handle.pulled {
+  transform: translateY(-50%) rotate(30deg);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.bet-control button {
+  font-size: 24px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bet-control span {
+  font-size: 20px;
+}
+
+.win-display {
+  font-size: 20px;
+}
