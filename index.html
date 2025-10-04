@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ad Revenue Slot Machine</h1>
+    
+    <div class="slot-machine">
+      <div class="grid" id="slotGrid">
+        <!-- 18 slot icons will be dynamically inserted here -->
+      </div>
+      <div class="handle" id="handle"></div>
+    </div>
+
+    <div class="controls">
+      <div class="bet-control">
+        <button id="decreaseBet">−</button>
+        <span id="betAmount">$1</span>
+        <button id="increaseBet">+</button>
+      </div>
+      <div class="win-display">
+        <span>Win: </span><span id="winAmount">$0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
